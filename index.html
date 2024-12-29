@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f1a2; /* Daisy-inspired background color */
+            color: #333;
+        }
+        /* Header */
+        header {
+            background-color: #f7c4a5; /* Soft pinkish daisy theme */
+            color: #333;
+            padding: 50px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.3rem;
+            font-weight: lighter;
+        }
+        /* Profile Section */
+        .profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -60px;
+            padding: 40px 0;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .profile img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            margin-right: 30px;
+            object-fit: cover;
+            border: 4px solid #f7c4a5;
+        }
+        .profile h2 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            color: #f7a9b8; /* Light pink color */
+        }
+        .profile p {
+            font-size: 1.2rem;
+            color: #777;
+        }
+        /* Section Title */
+        .section-title {
+            font-size: 2.3rem;
+            margin: 40px 0 20px;
+            text-align: center;
+            color: #242323;
+        }
+        /* Qualifications and Skills Section */
+        .qualifications,
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+        .qualification-card,
+        .skills-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 280px;
+            text-align: center;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .qualification-card:hover,
+        .skills-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .qualification-card h3,
+        .skills-card h3 {
+            color: #f7a9b8; /* Light pink */
+            font-size: 1.7rem;
+            margin-bottom: 10px;
+        }
+        .qualification-card p,
+        .skills-card p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+        /* Footer */
+        footer {
+            background-color: #f7c4a5; /* Soft pink */
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+            .qualifications,
+            .skills {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Daisy BCA</h1>
+    </header>
+    <!-- Profile Section -->
+    <section class="profile container">
+        <img src="image.jpg" alt="Daisy's Photo" class="img-fluid"> <!-- Replace with your image -->
+        <div>
+            <h2>Daisy BCA</h2>
+            <p>BCA 2nd Year Student at Vignan University</p>
+        </div>
+    </section>
+    <!-- Qualification Section -->
+    <section class="container">
+        <h2 class="section-title">Qualification</h2>
+        <div class="row qualifications">
+            <div class="col-md-4 qualification-card">
+                <h3>BCA (Bachelor of Computer Applications)</h3>
+                <p>Vignan University</p>
+                <p>2022 - Present</p>
+            </div>
+            <div class="col-md-4 qualification-card">
+                <h3>12th Class (Science)</h3>
+                <p>ABC School</p>
+                <p>2022</p>
+            </div>
+            <div class="col-md-4 qualification-card">
+                <h3>10th Class</h3>
+                <p>ABC School</p>
+                <p>2020</p>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="row skills">
+            <div class="col-md-3 skills-card">
+                <h3>HTML & CSS</h3>
+                <p>Building structured and styled websites using HTML and CSS.</p>
+            </div>
+            <div class="col-md-3 skills-card">
+                <h3>JavaScript</h3>
+                <p>Creating dynamic websites and handling logic with JavaScript.</p>
+            </div>
+            <div class="col-md-3 skills-card">
+                <h3>Python</h3>
+                <p>Writing scripts and automating tasks with Python.</p>
+            </div>
+            <div class="col-md-3 skills-card">
+                <h3>React.js</h3>
+                <p>Building interactive user interfaces with React.js.</p>
+            </div>
+        </div>
+    </section>
+    <!-- BCA Degree Details Section -->
+    <section class="container">
+        <h2 class="section-title">BCA Degree Details</h2>
+        <div class="qualification-card">
+            <h3>BCA - Vignan University</h3>
+            <p>Specialization: Computer Science</p>
+            <p>Duration: 3 Years</p>
+            <p>Expected Completion: 2025</p>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Daisy BCA 2nd Year Student</p>
+    </footer>
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
